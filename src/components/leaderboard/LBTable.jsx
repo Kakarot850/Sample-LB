@@ -50,11 +50,7 @@ function LBTable({ lbData }) {
                                 <div class="font-bold w-[58px] px-3 py-0.5 bg-[#1F1F1F] text-[16px]">{i + 4}TH</div>
                                 <div class="flex items-center gap-0.5 font-bold text-[16px]">
                                     <div class="rounded-full flex items-center justify-center">
-                                        <img
-                                            src="/leaderboard/lbTable/assets/pig.svg"
-                                            alt="pig"
-                                            className="w-8 h-8"
-                                        />
+                                        <img src="/leaderboard/lbTable/assets/pig.svg" alt="pig" className="w-8 h-8" />
                                     </div>
                                     {entry.username}
                                 </div>

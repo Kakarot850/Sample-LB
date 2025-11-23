@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Card = () => {
     return (
         <div className="relative w-[235px] h-[283px] font-archivo hover:scale-105 cursor-pointer transition-all duration-300">

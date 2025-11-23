@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink ,  Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import ButtonRight from "../leaderboard/ButtonRIght";
 import { HiMiniTrophy } from "react-icons/hi2";
 import { IoGift } from "react-icons/io5";

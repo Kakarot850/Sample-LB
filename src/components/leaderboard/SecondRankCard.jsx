@@ -18,7 +18,11 @@ const SecondRankCard = () => {
                     <div className="flex flex-col gap-0 items-center">
                         {/* AVATAR */}
                         <div className="rounded-full overflow-hidden ">
-                            <img src="/leaderboard/lbTable/assets/pig.png" alt="User avatar" className="size-18 object-cover" />
+                            <img
+                                src="/leaderboard/lbTable/assets/pig.png"
+                                alt="User avatar"
+                                className="size-18 object-cover"
+                            />
                         </div>
 
                         {/* USER NAME */}
