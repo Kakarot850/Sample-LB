@@ -49,14 +49,22 @@ function LBTable({ lbData }) {
                                     backgroundPosition: "center",
                                 }}
                             >
-                                <div className="font-bold w-12 sm:w-[58px] px-2 sm:px-3 py-0.5 bg-[#1F1F1F] text-xs sm:text-sm md:text-[16px]">{i + 4}TH</div>
+                                <div className="font-bold w-12 sm:w-[58px] px-2 sm:px-3 py-0.5 bg-[#1F1F1F] text-xs sm:text-sm md:text-[16px]">
+                                    {i + 4}TH
+                                </div>
                                 <div className="flex items-center gap-0.5 font-bold text-xs sm:text-sm md:text-[16px]">
                                     <div className="rounded-full flex items-center justify-center">
-                                        <img src="/leaderboard/lbTable/assets/pig.svg" alt="pig" className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                                        <img
+                                            src="/leaderboard/lbTable/assets/pig.svg"
+                                            alt="pig"
+                                            className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                                        />
                                     </div>
                                     <span className="truncate">{entry.username}</span>
                                 </div>
-                                <div className="font-bold text-xs sm:text-sm md:text-[16px] truncate">{entry.wagered.toLocaleString()}$</div>
+                                <div className="font-bold text-xs sm:text-sm md:text-[16px] truncate">
+                                    {entry.wagered.toLocaleString()}$
+                                </div>
                                 {/* fourth col */}
                                 <div className="text-right font-bold flex items-center justify-end gap-1 sm:gap-2 mr-3 sm:mr-4 md:mr-6">
                                     <div className="flex flex-row min-w-14 sm:min-w-16 md:min-w-17">

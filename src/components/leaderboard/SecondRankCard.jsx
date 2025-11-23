@@ -7,11 +7,7 @@ const SecondRankCard = () => {
             {/* CARD WRAPPER (relative) */}
             <div className="relative w-[180px] h-[265px] sm:w-[200px] sm:h-[295px] md:w-[222px] md:h-[325px]">
                 {/* BACKGROUND HEX IMAGE */}
-                <img
-                    src="/leaderboard/rankCards/rank-second.svg"
-                    alt="Rank card background"
-                    className="w-full h-full"
-                />
+                <img src="/leaderboard/rankCards/rank-second.svg" alt="Rank card background" className="w-full h-full" />
 
                 {/* CONTENT LAYER (absolute over the card) */}
                 <div className="absolute top-0 left-[] flex flex-col items-center z-10 size-full pt-8 sm:pt-10 md:pt-12 gap-2 md:gap-3">

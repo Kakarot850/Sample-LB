@@ -15,13 +15,7 @@ const Card = () => {
                         {/* winner */}
                         <div className="flex flex-row gap-1 items-baseline -mt-1">
                             <span className="size-[10px] sm:size-[11px] md:size-[12px]">
-                                <svg
-                                    width="13"
-                                    height="13"
-                                    viewBox="0 0 13 13"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_3_1155)">
                                         <path
                                             fill-rule="evenodd"
