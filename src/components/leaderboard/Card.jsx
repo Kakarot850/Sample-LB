@@ -2,19 +2,19 @@ import React from "react";
 
 const Card = () => {
     return (
-        <div className="relative w-[235px] h-[283px] font-archivo hover:scale-105 cursor-pointer transition-all duration-300">
-            <img src="/winner-card-bg.svg" alt="" className="" />
-            <div className="absolute inset-0 height-full ">
-                <div className="flex flex-col items-center justify-around py-4 h-full relative">
-                    <div className="absolute top-0 left-0 w-[93px] text-center border-[#2F97D6]  border py-0.5 border-l-0 border-t-0 bg-[#2277d857] rounded-tl-xl rounded-br-lg text-[10px]">
+        <div className="relative w-[200px] h-[240px] sm:w-[220px] sm:h-[265px] md:w-[235px] md:h-[283px] font-archivo hover:scale-105 cursor-pointer transition-all duration-300">
+            <img src="/winner-card-bg.svg" alt="" className="w-full h-full" />
+            <div className="absolute inset-0 height-full">
+                <div className="flex flex-col items-center justify-around py-3 md:py-4 h-full relative">
+                    <div className="absolute top-0 left-0 w-20 sm:w-[85px] md:w-[93px] text-center border-[#2F97D6] border py-0.5 border-l-0 border-t-0 bg-[#2277d857] rounded-tl-xl rounded-br-lg text-[9px] md:text-[10px]">
                         JAN 2025
                     </div>
-                    <img src="/pig.svg" alt="" className="size-[90px] " />
-                    <div className="flex flex-col items-center  gap-0 ">
-                        <p className="uppercase font-bold text-[24px] text-[#2277D8] ">mr. piggy</p>
+                    <img src="/pig.svg" alt="" className="size-[70px] sm:size-[80px] md:size-[90px]" />
+                    <div className="flex flex-col items-center gap-0">
+                        <p className="uppercase font-bold text-xl sm:text-[22px] md:text-[24px] text-[#2277D8]">mr. piggy</p>
                         {/* winner */}
                         <div className="flex flex-row gap-1 items-baseline -mt-1">
-                            <span className="size-[12px]">
+                            <span className="size-[10px] sm:size-[11px] md:size-[12px]">
                                 <svg
                                     width="13"
                                     height="13"
@@ -37,17 +37,17 @@ const Card = () => {
                                     </defs>
                                 </svg>
                             </span>
-                            <p className="uppercase font-bold text-[16px]">winner</p>
+                            <p className="uppercase font-bold text-sm sm:text-[15px] md:text-[16px]">winner</p>
                         </div>
                     </div>
                     {/* button */}
-                    <div className="rounded-xl  overflow-clip w-[191px] ">
-                        <div className="bg-[#212426] w-full ">
-                            <p className="flex flex-row justify-center gap-1 ">
+                    <div className="rounded-xl overflow-clip w-[160px] sm:w-[175px] md:w-[191px]">
+                        <div className="bg-[#212426] w-full">
+                            <p className="flex flex-row justify-center gap-1 text-sm md:text-base">
                                 <span className="text-[#51ADE5]">$</span>3000
                             </p>
                         </div>
-                        <button className="uppercase font-medium text-[10px] bg-[#2277D8] w-full py-1">
+                        <button className="uppercase font-medium text-[9px] md:text-[10px] bg-[#2277D8] w-full py-1">
                             total prize pool
                         </button>
                     </div>

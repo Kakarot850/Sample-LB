@@ -25,15 +25,15 @@ const navItems = [
 
 const Header = () => {
     return (
-        <div className="w-full fixed top-0 z-50  py-4 px-8 border-b border-gray-800">
-            <nav className="flex flex-row justify-around mx-auto max-w-7xl items-center">
+        <div className="w-full fixed top-0 z-50 py-3 md:py-4 px-4 md:px-8 border-b border-gray-800">
+            <nav className="flex flex-row justify-between md:justify-around mx-auto max-w-7xl items-center gap-2">
                 <Link to="/">
-                    <div className="w-fit bg-[#1F1F1F] pl-6 pr-4 pt-1 pb-2 rounded-md">
-                        <img src="/footer/logo.svg" alt="logo" />
+                    <div className="w-fit bg-[#1F1F1F] pl-3 pr-2 md:pl-6 md:pr-6 pt-1 pb-2 rounded-md">
+                        <img src="/footer/logo.svg" alt="logo" className="w-16 md:w-auto" />
                     </div>
                 </Link>
 
-                <ul className="flex flex-row uppercase gap-6 text-white font-bold">
+                <ul className="hidden md:flex flex-row uppercase gap-4 lg:gap-6 text-white font-bold text-xs lg:text-sm">
                     {navItems.map((item) => (
                         <NavLink
                             key={item.to}
@@ -58,7 +58,18 @@ const Header = () => {
                     ))}
                 </ul>
 
-                <ButtonRight />
+                <div className="hidden md:block">
+                    <ButtonRight />
+                </div>
+
+                {/* Mobile Menu Icon */}
+                <div className="md:hidden">
+                    <button className="text-white p-2">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </nav>
         </div>
     );
